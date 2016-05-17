@@ -1,0 +1,28 @@
+/* mekit/less/kadmin-bootstrap.less */
+
+// ** Integration KAdmin and bootstrap **
+// --------------------------------------
+
+body.kadmin-open.navbar-is-fixed-top{
+  padding-top: 30px + @navbar-height !important;
+}
+
+.kadmin-open .navbar-fixed-top{
+  top: 30px;
+}
+
+@media only screen and (max-width: 1023px){
+  body.kadmin-open.navbar-is-fixed-top{
+    padding-top: 45px + @navbar-height !important;
+  }
+
+  .kadmin-open .navbar-fixed-top{
+    top: 45px;
+  }
+}
+
+// Logout padding
+
+body.navbar-is-fixed-top{
+  padding-top: @navbar-height;
+}

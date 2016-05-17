@@ -1,0 +1,63 @@
+/* mekit/less/drupal.less */
+
+// ** DRUPAL ADMIN SPECIFIC STYLE **
+// ---------------------------------
+
+.panel-title{
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+}
+
+.page-admin{
+  table{
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+  }
+}
+
+dl.node-type-list,
+dl.admin-list{
+  dd{
+    margin-bottom: 10px;
+  }
+}
+
+body.page-node-webform .wrapper-content,
+body.page-node-edit .wrapper-content,
+body.page-node-children .wrapper-content,
+.vertical-tabs-panes.vertical-tabs-processed.tab-content {
+  background: #fff;
+}
+
+// ** CONTENT ADMIN **
+// -------------------
+
+#node-admin-content{
+
+  #edit-filters {
+    .form-wrapper{
+      margin: 0;
+    }
+
+    .filters{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    #edit-actions{
+      width: auto;
+    }
+
+    .form-group{
+      margin-bottom: 0;
+    }
+
+    .form-type-select{
+      margin-bottom: 5px;
+    }
+  }
+
+  #edit-options {
+    display: none;
+  }
+}

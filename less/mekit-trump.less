@@ -1,0 +1,315 @@
+/* mekit/less/mekit-trump.less */
+
+// 6839 circa
+
+// ** HEADER **
+// ------------
+
+a.txt-brand{
+  font-size: @font-size-base;
+
+  .site-title{
+    font-family: @headings-font-family;
+    font-weight: @headings-font-weight;
+    line-height: @headings-line-height;
+    color: @navbar-default-link-active-color;
+  }
+
+  .site-slogan{
+    font-weight: normal;
+    color: @navbar-default-link-active-color;
+  }
+}
+
+a.txt-brand.with-slogan{
+  padding: 15px;
+}
+
+a.txt-brand.txt-brand-footer.with-slogan{
+  display: block;
+  padding-left: 0;
+  &:focus,
+  &:hover,
+  &:active,{
+    text-decoration: none;
+  }
+}
+
+// ** MESSAGE **
+// ------------- 
+
+.front .messages div{
+  .margin-t(1);
+}
+
+// ** WELL **
+// ----------
+
+.well{
+  border: none;
+  .box-shadow(none);
+}
+
+// ** FIELD **
+// -----------
+
+.field{
+  .field-label{
+    font-weight: normal;
+  }
+}
+
+.form-actions{
+  text-align: center;
+}
+
+.tabs--secondary{
+  width: 100%;
+}
+
+// ** BTN **
+// ---------
+
+.btn-justified{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// ** SCROLL HOME **
+// -----------------
+.scroll-home-node{
+  .padding-t(2);
+  .padding-b(4);
+}
+
+// Spaziature ridotte per mobile
+@media (max-width: @screen-sm-min) {
+  .scroll-home-node{
+    .padding-t(1);
+    .padding-b(2);
+  }
+}
+
+// .scroll-home-link{
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+// }
+
+// ** FOOTER **
+// ------------
+
+.footer{
+  border-top: none;
+  padding-top: 0px;
+
+  // It's very specific but it's ok
+  #block-footer-footer .nav li a{
+    padding: 0;
+    margin: 0 0 12.5px;
+    &:focus,
+    &:active,
+    &:hover{
+      background: none;
+    }
+  }
+}
+
+.footer-logo{
+  .margin-t(0.5);
+
+  img:hover{
+    .opacity(0.9);
+  }
+}
+
+// ** TABLE **
+// -----------
+
+.draggable a.tabledrag-handle{
+  margin-left: 0px;
+}
+
+a.tabledrag-handle .handle{
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-position: 0 0;
+  margin: 7px auto;
+}
+
+// ** IMGS **
+// ----------
+
+.img-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// ** FORM **
+// ----------
+
+form{
+  padding-bottom: 30px;
+  label{
+    font-weight: normal;
+    font-size: @font-size-base;
+  }
+}
+
+.input-group{
+  margin-bottom: 15px;
+}
+
+.form-item{
+  .margin-b(0.5);
+}
+
+input.form-file{
+  .margin-b(0.5);
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+}
+
+.webform-submit{
+  .margin-t(0.5);
+}
+
+.page-user form#user-login{
+  .padding-t(1);
+}
+
+#nodehierarchy-children-form .newchild{
+  .padding-t(1);
+}
+
+// ** VIDEO **
+// -----------
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px; 
+  height: 0; 
+  overflow: hidden;
+}
+.videowrapper iframe, 
+.videowrapper object,
+.videowrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// ** ICONS **
+// -----------
+.page-icons #block-system-main{
+  padding-bottom: 30px;
+  .padding-b(1.5);
+}
+
+.page-icons-fontawesome #block-system-main i{
+  margin: 10px;
+}
+
+.footer-content ul.menu i{
+  margin-right: 7px;
+}
+
+.wrapper-icon-by-letter i{
+  margin-right: 10px;
+  color: @brand-primary;
+}
+
+// ** OTHER BTN LIST **
+// --------------------
+
+#block-menu-devel .menu-devel{
+  .clearfix();
+  .btn-list;
+  li{
+    display: inline-block;
+    a{
+      .btn-list__btn;
+    }
+  }
+}
+
+// ** EDITING FORM CK EDITOR **
+// ----------------------------
+
+.filter-wrapper .form-type-select label,
+.filter-wrapper .filter-help,
+.filter-wrapper .filter-guidelines{
+  display: none;
+}
+
+.filter-wrapper{
+  .panel-body{
+    padding: 5px;
+  }
+
+  .form-type-select{
+    margin-bottom: 0;
+  }
+}
+
+.text-format-wrapper{
+  position: relative;
+
+  .ckeditor_links{
+    position: absolute;
+    font-size: 0.8em;
+    top: 3px;
+    right: 0px;
+  }
+}
+
+.form-type-textarea{
+  margin-bottom: 0;
+}
+
+// ** MANUAL CROP OVERWRITE **
+// ---------------------------
+.manualcrop-inline .manualcrop-buttons {
+  padding-bottom: 0px;
+  width: auto;
+  float: inherit;
+  font-weight: normal;
+
+  input{
+    margin-right: 5px;
+  }
+}
+
+.manualcrop-style-button-holder{
+  padding-top: 5px;
+}
+
+// ** UNPUBLISHED NODE **
+// ----------------------
+
+.node-unpublished{
+  background: url(../img/bg-unpublished.png);
+}
+
+// ** MAINTENANCE PAGE **
+// ----------------------
+
+.maintenance-page{
+  background: #fff;
+
+  #page{
+    .padding-t(6);
+    min-height: 400px;
+  }
+}
+
+// ** PARAGRAPH **
+// ---------------
+
+.field-type-paragraphs .form-actions{
+  text-align: right;
+}
