@@ -172,8 +172,8 @@ function mekit_menu_local_tasks(&$variables) {
 
   if (!empty($variables['secondary'])) {
     $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
-    $variables['secondary']['#prefix'] .= '<ul class="tabs--secondary pagination pagination-sm">';
-    $variables['secondary']['#suffix'] = '</ul>';
+    $variables['secondary']['#prefix'] .= '<div class="tabs--secondary">';
+    $variables['secondary']['#suffix'] = '</div>';
     $output .= drupal_render($variables['secondary']);
   }
 
@@ -187,10 +187,14 @@ function mekit_menu_local_task($variables) {
   $link = $variables['element']['#link'];
   $link_text = $link['title'];
   $classes = array();
-  
+
+  if (!empty($variables['element']['#active'])) {
+    $link['localized_options']['attributes']['class'][] = 'active';
+  }
+
   $link['localized_options']['attributes']['class'][] = 'btn';
   $link['localized_options']['attributes']['class'][] = 'btn-default';
-    
+
   $classes = implode(' ' , $link['localized_options']['attributes']['class']);
   $url = url($link['href'], $link['localized_options']);
 
