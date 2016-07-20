@@ -33,7 +33,7 @@
   <div id="page" class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="logo spazio-30">
+        <div class="logo margin-b-1">
           <?php if (!empty($logo)): ?>
             <p class="text-center"><a href="<?php print $base_path; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
               <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -42,10 +42,10 @@
           <?php endif; ?>
         </div>
 
-        <div id="body" class="spazio-50">
+        <div id="body" class="margin-b-2">
           <?php if (!empty($messages)): print $messages; endif; ?>
           
-          <div id="content-content" class="text-center spazio-30 lead">
+          <div id="content-content" class="text-center margin-b-2 lead">
             <?php print $content; ?>
           </div>
 
